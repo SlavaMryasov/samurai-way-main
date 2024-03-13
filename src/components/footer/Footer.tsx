@@ -1,10 +1,14 @@
+import styled from "styled-components"
 
-const Footer = () => {
+export const Footer = () => {
     return (
-        <footer>
+        <StyledFooter>
             footer
-        </footer>
+        </StyledFooter>
     )
 }
 
-export default Footer;
+
+const StyledFooter = styled.footer`
+outline: 1px solid red;
+`

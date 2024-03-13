@@ -12,6 +12,10 @@ type PostType = {
     message: string,
     likesCount: number
 }
+export type SidebarItemsType = {
+    title: string
+    link: string
+}
 
 
 type ProfilePageType = {
@@ -21,18 +25,20 @@ type DialogPageType = {
     dialogs: Array<DialogType>
     messages: Array<MessageType>
 }
-type Sidebar = {
 
+export type SidebarType = {
+    sidebarItems: Array<SidebarItemsType>
 }
 
 type RootStateType = {
     profilePage: ProfilePageType
     dialogsPage: DialogPageType
-    sidebar: Sidebar
+    sidebar: SidebarType
 }
 
 
 let state: RootStateType = {
+
     profilePage: {
         posts: [
             {id: 1, message: 'Hi, my name is Slim Shaddy1', likesCount: 12},
@@ -60,7 +66,15 @@ let state: RootStateType = {
             {id: 5, message: 'five'},
         ]
     },
-    sidebar: {}
+    sidebar: {
+        sidebarItems: [
+            {title: 'Profile', link: '#profile'},
+            {title: 'Messages', link: '#messages'},
+            {title: 'News', link: '#news'},
+            {title: 'Music', link: '#music'},
+            {title: 'Settings', link: '#Settings'},
+        ],
+    }
 }
 
 export default state;
