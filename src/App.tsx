@@ -10,10 +10,13 @@ import { GridContainer } from "./components/GridContainer";
 import { Container } from "./components/Container";
 import { SidebarItemsType } from "./redux/state";
 
+
 function App() {
   let message = state.profilePage.posts[0].message;
   let messages = state.dialogsPage.messages;
   let sidebarItems = state.sidebar.sidebarItems;
+  let profilePage = state.profilePage
+  console.log(profilePage)
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -21,7 +24,7 @@ function App() {
         <Header/>
         <GridContainer>
         <Sidebar collapsed={false} sidebarItems={sidebarItems}/>
-        <Main/>
+        <Main data={profilePage}/>
         <Footer/>
         </GridContainer>
         </Container>

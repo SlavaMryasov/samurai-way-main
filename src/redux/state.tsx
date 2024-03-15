@@ -7,7 +7,7 @@ type DialogType = {
     id: number,
     name: string
 }
-type PostType = {
+export type PostType = {
     id: number,
     message: string,
     likesCount: number
@@ -18,7 +18,7 @@ export type SidebarItemsType = {
 }
 
 
-type ProfilePageType = {
+export type ProfilePageType = {
     posts: Array<PostType>
 }
 type DialogPageType = {
