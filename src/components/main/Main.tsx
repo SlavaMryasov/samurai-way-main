@@ -29,7 +29,7 @@ const Main: React.FC<MainPropsType> = (props) => {
       <Input inputRef={inputRef} />
       <Button name="Add post" id={v1()} onClick={addMessageButtonHandler} />
       <ul>
-        {posts.map(post => <li>{post.message}</li>)}
+        {posts.map(post => <li key={post.id}>{post.message} like: {post.likesCount}</li>)}
       </ul>
     </div>
   );

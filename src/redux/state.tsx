@@ -41,10 +41,10 @@ let state: RootStateType = {
 
     profilePage: {
         posts: [
-            {id: 1, message: 'Hi, my name is Slim Shaddy1', likesCount: 12},
-            {id: 2, message: 'Hi, my name is Slim Shaddy2', likesCount: 12},
-            {id: 3, message: 'Hi, my name is Slim Shaddy3', likesCount: 12},
-            {id: 4, message: 'Hi, my name is Slim Shaddy4', likesCount: 12},
+            {id: 1, message: 'This is good idea!', likesCount: 22},
+            {id: 2, message: "I'm happy)", likesCount: 1},
+            {id: 3, message: 'IT-INCUBATOR', likesCount: 11},
+            {id: 4, message: 'Hi, my name is Slim Shaddy', likesCount: 99},
         ]
     },
 

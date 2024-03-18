@@ -12,7 +12,7 @@ const Sidebar: React.FC<SidebarPropsType> = (props) => {
         return (
             <StyledSidebar>
                 <ul>
-                {props.sidebarItems.map(item=> <li><Link>{item.title}</Link></li>)}
+                {props.sidebarItems.map((item, index)=> <li key={index}><Link>{item.title}</Link></li>)}
                 </ul>
                 </StyledSidebar>
                
